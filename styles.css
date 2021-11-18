@@ -1,33 +1,53 @@
 body {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  font-family: "Courier New", Courier, monospace;
-}
-
-#game {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: monospace;
+  background-color: mintcream;
 }
 
-#board {
+#game {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#name1,
+#name2 {
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  display: block;
+}
+
+.board {
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  width: 600px;
-  height: 600px;
+  width: 400px;
+  height: 400px;
   gap: 0px;
-  background-color: aquamarine;
+  background-color: orange;
+  display: none;
+  border-radius: 8px;
+}
+
+.board-active {
+  display: flex;
 }
 
 .box {
   background-color: pink;
   border: 1px orange solid;
-  width: 150px;
-  height: 150px;
+  width: 32%;
+  height: 32%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,13 +56,27 @@ body {
 }
 
 #results {
+  margin: 20px;
+  height: 40px;
   font-size: 24px;
   font-weight: bolder;
 }
 
-#interface {
+#game-controls {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+#start-hidden {
+  display: none;
+}
+
+#reset {
+  display: none;
+}
+
+#reset-show {
+  display: block;
 }

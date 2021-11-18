@@ -7,9 +7,15 @@
     <title>Tic Tac Toe</title>
 </head>
 <body>
+    <h1>Tic Tac Toe</h1>
     <div id="game">
-        <h1>Tic Tac Toe</h1>
-        <div id="board">
+        <div id="name1">
+            <div id="player1">
+                <label for="player1">Player 1 (x):</label>
+                <input type="text" name="player1" id="player1" value='Enter your name'>
+            </div>
+        </div>
+        <div class="board">
             <div class="box" data-key="0"></div>
             <div class="box" data-key="1"></div>
             <div class="box" data-key="2"></div>
@@ -20,18 +26,18 @@
             <div class="box" data-key="7"></div>
             <div class="box" data-key="8"></div>
         </div>
-    </div>
-    <div id="interface">
-        <div id="results"></div>
-        <div id="players">
-            <div id="player1">
-                <label for="player1">Player 1:</label>
-                <input type="text" name="player1" value=''>
-            </div>
+        <div id="name2">
             <div id="player2">
-                <label for="player2">Player 2:</label>
-                <input type="text" name="player2" value=''>
+                <label for="player2">Player 2 (o):</label>
+                <input type="text" name="player2" id="player2" value='Enter your name'>
             </div>
+            </div>
+    </div>
+    <div id="game-controls">
+        <div id="results"></div>
+        <div id="controllers">
+            <button id="start">Start</button>
+            <button id="reset">Reset</button>
         </div>
     </div>
 </body>
