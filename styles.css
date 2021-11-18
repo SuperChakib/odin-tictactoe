@@ -1,0 +1,48 @@
+body {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 600px;
+  height: 600px;
+  gap: 0px;
+  background-color: aquamarine;
+}
+
+.box {
+  background-color: pink;
+  border: 1px orange solid;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+#results {
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+#interface {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
